@@ -63,7 +63,7 @@ body {
  
 .header .conteiner {
     display: flex;
-    margin: 24px 0;
+    padding: 24px 0;
 
     
 }  
@@ -71,7 +71,7 @@ body {
 .header-menu {
     display: flex;
     align-items: center;
-    margin-right: auto;
+    
 }
 
 .header-nav {
@@ -229,18 +229,20 @@ body {
 
 .feature .text {
     color: var(--body-text-color); 
-    font-size: 16px;
-    line-height: 1.5;
+    
 }
 
 /* Section 2 */
 .functions {
-    padding: 0 156px 138px;
+    padding-bottom: 120px;
 }
 
 .functions-list {
     display: flex;
-    gap: var(--basic-gap)
+    gap: var(--basic-gap);
+   
+    max-width: 100%;
+    height: auto;
 }
 
 .functions .title {
@@ -294,24 +296,19 @@ body {
     color: var(--title-text-color);
 }
 .team-list .text {
-    color: var(--body-text-color); 
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: 0.02em;    
+    color: var(--body-text-color);    
 }
   
 
 /* Footer */
 .footer {
     background-color: var(--title-text-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .conteiner-footer {
-   padding-top: 100px;
-   padding-left: 156px;
-   padding-bottom: 100px;
+    padding-left: 156px;
 }
-   
 .logo-footer {
     font-family: 'Raleway';
     font-weight: 800;
@@ -320,6 +317,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--active-color);
+    margin-bottom: 16px;
 }
 .logo-footer-second {
     color: var(--cloud-color); 
@@ -328,26 +326,24 @@ body {
 .footer-text {
     color: var(--cornflawer-color);
     max-width: 264px;
-    margin-top: 16px;
+    
 }
 
            /* Portfolio */
  /* Button */
+.filters {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 .conteiner-filters {
+    
 
 }
 .filters-list {
     display: flex;
     justify-content: center;
-    padding-top: 96px;
-    padding-bottom: 72px;
     gap: var(--basic-gap);
-    flex-direction: row;
-    align-items: center;
-    padding-right: auto;
-    padding-left: auto;
-   
-
+    margin-bottom: 72px;
 }
 .filters-item-btn {
 }
@@ -369,44 +365,40 @@ body {
     border: 1px solid var(--cornflawer-color);
     border-radius: 4px;
 }
-
 .text-btn:hover,
 .text-btn:focus {
     background: var(--acsent-color);
     color: var(--white-text-color);
+    border-color: var(--acsent-color);
 } 
 /* Foto */
 .portfolio {
     background: var(--white-text-color);
     display: flex;
     flex-wrap: wrap;
-    margin-top: 72;
-    margin-bottom: 120px;
     row-gap: 48px;
     column-gap: 24px;
-
-}
-.conteiner-filters {
-
-
 }
 
 .portfolio-card {
     background: var(--white-text-color);
     width: calc((100% - 48px) / 3);
-    border: 1px solid #E7E9FC;
-    box-sizing: border-box;
-
 }
-
 .portfolio-link {
-    display: block;
     text-decoration: none;
+    
+}
+.portfolio-foto {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
 }
 .card-text {
-    padding: 32px;
+    padding: 32px 16px;
+    border: 1px solid var(--cornflawer-color);
+    border-top: none;
 }
-
 .portfolio-title {
     font-weight: 500;
     font-size: 20px;
@@ -415,11 +407,13 @@ body {
     letter-spacing: 0.02em;
     padding-left: 16;
     margin-bottom: var(--basic-margin-text);
-    
 }
 .portfolio-text .text {
-    color: var(--title-text-color);
+    color: var(--body-text-color);
     text-align: center;
+    padding: 32px 16px;
+        border: 1px solid #E7E9FC;
+        border-top: none;
 }
 
 
