@@ -59,13 +59,11 @@ body {
 .header { 
     background-color: var(--white-text-color);
     border-bottom: 1px solid var(--cornflawer-color);
+    padding: 24px 0;
 }
  
 .header .conteiner {
-    display: flex;
-    padding: 24px 0;
-
-    
+    display: flex; 
 }  
 
 .header-menu {
@@ -139,15 +137,6 @@ body {
     background-color: var(--title-text-color);
     padding: 188px 0;
 }
-
-.hero-conteiner {
-    width: 1158px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-
-}
-
 .hero-title {
     width: 496px;
     font-size: 56px;
@@ -306,10 +295,9 @@ body {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-.conteiner-footer {
-    padding-left: 156px;
-}
+
 .logo-footer {
+    display: inline-block;
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
@@ -408,12 +396,9 @@ body {
     padding-left: 16;
     margin-bottom: var(--basic-margin-text);
 }
-.portfolio-text .text {
+.card-text .text {
     color: var(--body-text-color);
-    text-align: center;
-    padding: 32px 16px;
-        border: 1px solid #E7E9FC;
-        border-top: none;
+    
 }
 
 
